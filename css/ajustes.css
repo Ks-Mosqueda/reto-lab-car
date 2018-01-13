@@ -1,0 +1,118 @@
+.fondo-taxi {
+  background: url(../assets/images/taxi.jpg);
+  height: 120vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.margin-bottom {
+  margin-bottom: 0;
+}
+
+.card {
+  background-color: #F7B617;
+  color: white;
+}
+
+.display-inline {
+  display: inline-block;
+}
+
+.boton {
+  color: black;
+  background-color: white;
+  border: none;
+}
+
+.align {
+  margin-top: 30vh;
+}
+
+.yellow {
+  background-color: #F7B617;
+  height: 80vh;
+  padding: 0;
+}
+
+.border {
+  border: 2px solid white;
+  height: 60vh;
+  margin-top: 10vh;
+  border-left: none;
+}
+
+.color-white {
+  color: white;
+  margin-top: 12vh;
+  text-align: justify;
+}
+
+.img {
+  height: 50vh;
+  margin-top: 6vh;
+}
+
+.fondo-conductor {
+  background: url(../assets/images/conduce.jpg);
+  height: 80vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.opacity {
+  background-color: rgba(0,0,0,.5);
+  height: 80vh;
+  color: white;
+}
+
+.boton-2 { /*Da estilo al boton de la tercera seccion*/
+  color: white;
+  background-color: #F7B617;
+  border: none;
+}
+
+.text { /*alinea el texto de la tercera sección*/
+  margin-top: 30vh;
+}
+
+.footer {
+  background-color: #2B2B2B;
+  height: 80vh;
+}
+
+.footer-border {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  height: 60vh;
+  margin-top: 10vh;
+}
+
+.color {
+  color: white;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  color: white;
+}
+
+#map {
+  height: 100%;
+}
+      /* Optional: Makes the sample page fill the window. */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+      }
+.modal-title {
+  color: black;
+}
