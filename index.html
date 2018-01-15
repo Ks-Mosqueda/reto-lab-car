@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/ajustes.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <body>
 
@@ -34,37 +35,65 @@
 <!-- inicia primera seccion-->
       <div class="row">
         <div class="col-md-12 fondo-taxi">
-          <div class="col-xs-8 col-xs-offset-4 col-md-5 col-md-offset-7 jumbotron card align">
+          <div class="visible-lg visible-md visible-sm col-sm-8 col-sm-offset-4  col-md-5 col-md-offset-7 jumbotron card align">
              <h2>Disfruta del viaje</h2>
              <h2>Eres dueño de tu tiempo</h2>
              <div class=" col-s-6 col-md-8">
                <h3 class="display-inline">Viaja con</h3>
                <img src="assets/images/logoBlanco.png" alt="">
              </div>
-             <div class="col-md-12">
+             <div class="">
                <p><a href="#ventana1" class="btn btn-primary btn-lg boton" data-toggle="modal">REGÍSTRATE</a></p>
-               <div class="modal fade" id="ventana1">
-                 <div class="modal-dialog">
-                   <div class="modal-content">
-                     <div class="modal-header">
-                       <h2 class="modal-title">REGÍSTRATE</h2>
-
-                     </div>
-                   </div>
-                 </div>
-
-
-               </div>
              </div>
-
              <div class="col-md-12">
-               <hr class="display-inline col-md-3"><p class="display-inline"> O bien </p><hr class="display-inline col-md-3">
+               <hr class="display-inline col-md-1"><p class="display-inline"> O bien </p><hr class="display-inline col-md-1">
              </div>
+
              <p><a class="btn btn-primary btn-lg boton" href="#" role="button">Conviértete en un conductor</a></p>
           </div>
         </div>
     </div>
 <!-- termina primera seccion-->
+             <!--version mobile-->
+             <div class="visible-xs col-xs-9 col-xs-offset-3">
+               <h1>Comienza a viajar con <img src="assets/images/logoBlanco.png"alt=""></h1>
+             </div>
+             <!--inicia modal-1-->
+               <div class="modal fade" id="ventana1">
+                 <div class="modal-dialog">
+                   <div class="modal-content aqua">
+                     <!-- header de la ventana-->
+                     <div class="modal-header">
+                       <button type="button" class="close" data-dismiss:"modal" aria-hidden="true">&times;</button>
+                       <img src="assets/images/icon-user.png" id="icon-user" alt="">
+                     </div>
+                     <!-- Contenido de la ventana-->
+                     <div class="modal-body modal-1">
+                       <div class="col-md-4 col-md-offset-4 log-in">
+                         <div class="form-group">
+                            <label class="sr-only" for="username">Username</label>
+                            <div class="input-group">
+                              <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></div>
+                              <input type="text" class="form-control" id="username" placeholder="Username">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="password">Password</label>
+                            <div class="input-group">
+                              <div class="input-group-addon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></div>
+                              <input type="password" class="form-control" id="password" aria-describedby="forgotPassword" placeholder="Password">
+                            </div>
+                          </div>
+                          <button type="button" class="btn btn-secondary center-block" id="log-in">Login</button>
+                          <div class="form-group">
+                            <span id="forgotPassword" class="help-block">Forgot password? <a href="#">Click here.</a></span>
+                          </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <!--termina modal 1 -->
 
 <!--inicia segunda seccion-->
     <div class="row">
@@ -110,14 +139,16 @@
         <div class="row">
           <div class="col-md-12 yellow">
             <div class="row">
-              <div class="col-md-6 color-white">
+              <div class="col-md-offset-2 col-md-6 color-white">
                 <h3>Tarifas</h3>
                 <h4>Consulta las tarifas LabCar aquí</h4>
                 <div class="row">
-                  <input type="text" name="" value="">
+                  <label for="origin-input"><img src="assets/images/shape.png" alt="Pickup location"></label>
+                  <input class="style-input margin-input" type="text" name="" value="">
                 </div>
                 <div class="row">
-                  <input type="text" name="" value="">
+                  <label for="destination-input"><img src="assets/images/shape2.png" alt="Destination"></label>
+                  <input class="style-input" type="text" name="" value="">
                 </div>
               </div>
               <div class="col-md-6">
@@ -168,6 +199,7 @@
             </div>
           </div>
         </div>
+
 
 </div>
 
